@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acompanhar Inscrição - Programa Trilhas</title>
+    <link rel="stylesheet" href="acompanhar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <a href="index.html" class="back-button">
+                <img src="imagens/arrow-left-02.png" alt="Voltar"> Voltar
+            </a>
+
+            <h1>Acompanhar Inscrição</h1>
+            <p>Digite seu CPF e e-mail para consultar o status da sua inscrição</p>
+
+            <form action="#" method="post" class="search-form">
+                <div class="form-group">
+                    <label for="cpf">CPF</label>
+                    <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                </div>
+
+                <button type="submit" class="btn">Consultar</button>
+            </form>
+
+            <!-- Esta seção ficaria oculta inicialmente e seria mostrada após a consulta -->
+            <div class="result-section" style="display: none;">
+                <div class="status-card">
+                    <div class="status-header">
+                        <h2>Status da Inscrição</h2>
+                        <span class="status-badge pending">Em análise</span>
+                    </div>
+
+                    <div class="candidate-info">
+                        <p><strong>Nome:</strong> <span id="candidate-name">Nome do Candidato</span></p>
+                        <p><strong>Trilha:</strong> <span id="candidate-track">Programação Front-end</span></p>
+                        <p><strong>Data de inscrição:</strong> <span id="application-date">01/07/2023</span></p>
+                    </div>
+
+                    <div class="steps">
+                        <div class="step completed">
+                            <div class="step-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="step-content">
+                                <h3>Inscrição Recebida</h3>
+                                <p>Sua inscrição foi recebida com sucesso.</p>
+                                <span class="step-date">01/07/2023</span>
+                            </div>
+                        </div>
+
+                        <div class="step current">
+                            <div class="step-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="step-content">
+                                <h3>Em Análise</h3>
+                                <p>Sua documentação está sendo analisada pela nossa equipe.</p>
+                                <span class="step-date">03/07/2023</span>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-icon">
+                                <i class="fas fa-user-check"></i>
+                            </div>
+                            <div class="step-content">
+                                <h3>Resultado</h3>
+                                <p>O resultado da sua inscrição será divulgado aqui.</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="step-content">
+                                <h3>Matrícula</h3>
+                                <p>Instruções para matrícula.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

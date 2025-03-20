@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição - Programa Trilhas</title>
+    <link rel="stylesheet" href="formulario.css">
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="form-header">
+                <a href="index.html" class="back-button">
+                    <img src="imagens/arrow-left-02.png" alt="Voltar"> Voltar
+                </a>
+                <h1>Formulário de inscrição</h1>
+                <p>Preencha os dados abaixo para fazer sua inscrição no Programa Trilhas.</p>
+            </div>
+
+            <form action="#" method="post">
+                <section class="form-section">
+                    <h2>Informações do participante</h2>
+
+                    <div class="form-group">
+                        <label for="nome">Nome completo</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="data">Data de nascimento</label>
+                        <input type="text" id="data" name="data" placeholder="DD/MM/AAAA">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cpf">CPF</label>
+                        <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sexo">Sexo</label>
+                        <div class="select-wrapper">
+                            <select id="sexo" name="sexo">
+                                <option value="">Selecione</option>
+                                <option value="feminino">Feminino</option>
+                                <option value="masculino">Masculino</option>
+                                <option value="outro">Outro</option>
+                                <option value="prefiro-nao-dizer">Prefiro não dizer</option>
+                            </select>
+                            <img src="imagens/arrow-down-01.png" alt="Seta para baixo">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="text" id="telefone" name="telefone" placeholder="(00) 0 0000-0000">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="documento">Documento de identidade</label>
+                        <div class="file-upload">
+                            <input type="file" id="documento" name="documento" class="file-input">
+                            <div class="file-placeholder">
+                                <img src="imagens/cloud-upload.png" alt="Ícone de upload de arquivo">
+                                <p>Clique aqui para selecionar o arquivo</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="form-section">
+                    <h2>Endereço residencial</h2>
+
+                    <div class="form-group">
+                        <label for="cep">CEP</label>
+                        <input type="text" id="cep" name="cep" placeholder="00000-000">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="rua">Rua</label>
+                            <input type="text" id="rua" name="rua" placeholder="Digite o nome da rua">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="numero">Número</label>
+                            <input type="text" id="numero" name="numero" placeholder="Digite o número">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="cidade">Cidade</label>
+                            <input type="text" id="cidade" name="cidade" placeholder="Digite a cidade">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="estado">Estado</label>
+                            <input type="text" id="estado" name="estado" placeholder="UF">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comprovante">Comprovante de residência</label>
+                        <div class="file-upload">
+                            <input type="file" id="comprovante" name="comprovante" class="file-input">
+                            <div class="file-placeholder">
+                                <img src="imagens/cloud-upload.png" alt="Ícone de upload de arquivo">
+                                <p>Clique aqui para selecionar o arquivo</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="form-section">
+                    <h2>Trilhas de aprendizagem</h2>
+                    <p class="help-text">Selecione apenas uma trilha</p>
+
+                    <div class="trilhas-grid">
+                        <div class="trilha-option">
+                            <input type="radio" id="trilha-frontend" name="trilha" value="frontend">
+                            <label for="trilha-frontend">
+                                <div class="trilha-content">
+                                    <img src="imagens/check.png" alt="check" class="check-icon">
+                                    <div class="trilha-icon">
+                                        <img src="imagens/front-end.png" alt="Ícone de trilha Front-end">
+                                    </div>
+                                    <span>Programação Front-end</span>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="trilha-option">
+                            <input type="radio" id="trilha-backend" name="trilha" value="backend">
+                            <label for="trilha-backend">
+                                <div class="trilha-content">
+                                    <div class="trilha-icon">
+                                        <img src="imagens/check.png" alt="check" class="check-icon">
+                                        <img src="imagens/back-end.png" alt="Ícone de trilha Back-end">
+                                    </div>
+                                    <span>Programação Back-end</span>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="trilha-option">
+                            <input type="radio" id="trilha-jogos" name="trilha" value="jogos">
+                            <label for="trilha-jogos">
+                                <div class="trilha-content">
+                                    <img src="imagens/check.png" alt="check" class="check-icon">
+                                    <div class="trilha-icon">
+                                        <img src="imagens/jogos.png" alt="Ícone de trilha Jogos">
+                                    </div>
+                                    <span>Programação de Jogos</span>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="trilha-option">
+                            <input type="radio" id="trilha-ux" name="trilha" value="ux">
+                            <label for="trilha-ux">
+                                <div class="trilha-content">
+                                    <img src="imagens/check.png" alt="check" class="check-icon">
+                                    <div class="trilha-icon">
+                                        <img src="imagens/ux.png" alt="">
+                                    </div>
+                                    <span>Design e Experiência</span>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="trilha-option">
+                            <input type="radio" id="trilha-dados" name="trilha" value="dados">
+                            <label for="trilha-dados">
+                                <div class="trilha-content">
+                                    <img src="imagens/check.png" alt="check" class="check-icon">
+                                    <div class="trilha-icon">
+                                        <img src="imagens/Frame 48095973.png" alt="Ícone de trilha Ciência de Dados">
+                                    </div>
+                                    <span>Ciência de Dados</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="terms-container">
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="termos" name="termos" required>
+                        <label for="termos">
+                            Declaro que li e concordo com os <a href="#" class="link">Termos e Condições</a> e com a <a
+                                href="#" class="link">Política de Privacidade</a>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="button" class="btn cancel" onclick="location.href='index.html'">Cancelar</button>
+                    <button type="submit" class="btn submit">Fazer inscrição</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="ilustracao">
+            <div class="ilustracao-img">
+                <img src="imagens/Ilustration.png" alt="Imagem de ilustracão">
+            </div>
+            <div class="ilustracao-logo">
+                <img src="imagens/Vector.png" alt="Logo do programa Trilhas">
+                <img src="imagens/Group.png" alt="Logo do programa Trilhas">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
